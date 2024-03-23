@@ -1,0 +1,67 @@
+/* src/styles/Header.module.css */
+.header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .headerbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .headericon {
+    position: relative;
+  }
+
+  .headerTextWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .headerText {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* .headerImage {
+    width: 110%;
+    height: 10px;
+  } */
+
+  .headericon img{
+    height: 25rem;
+    width: 110%;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .search input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icons img {
+    height: 24px;
+  }
