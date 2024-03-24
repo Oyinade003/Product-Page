@@ -16,42 +16,42 @@ const MainContent = () => {
     <div className={styles.mainContent}>
       <div className={styles.categoryIcons}>
         <div className={styles.categoryIcon}>
-        <h3>Food</h3>
           <img src={foodIcon} alt="Food" />
+          <h3>Food</h3>
         </div>
         <div className={styles.categoryIcon}>
-        <h3>Clothes</h3>
           <img src={clothesIcon} alt="Clothes" />
+          <h3>Clothes</h3>
         </div>
         <div className={styles.categoryIcon}>
-        <h3>Books</h3>
           <img src={booksIcon} alt="Books" />
+          <h3>Books</h3>
         </div>
         <div className={styles.categoryIcon}>
-        <h3>Footwear</h3>
           <img src={footwearIcon} alt="Footwear" />
+          <h3>Footwear</h3>
         </div>
         <div className={styles.categoryIcon}>
-        <h3>Skincare</h3>
           <img src={skincareIcon} alt="Skincare" />
+          <h3>Skincare</h3>
         </div>
         <div className={styles.categoryIcon}>
-        <h3>Haircare</h3>
           <img src={haircareIcon} alt="Haircare" />
+          <h3>Haircare</h3>
         </div>
         <div className={styles.categoryIcon}>
-        <h3>Gadgets</h3>
           <img src={gadgetsIcon} alt="Gadgets" />
+          <h3>Gadgets</h3>
         </div>
-        <div className={styles.categoryIcon}>
-        <h3>Stationeries</h3> 
+        <div className={styles.categoryIcon}> 
           <img src={stationeriesIcon} alt="Stationeries" />
+          <h3>Stationeries</h3>
         </div>
       </div>
     
-      <div className={styles.vendor}>
+      {/* <div className={styles.vendor}>
         <button className={styles.vendorButton}>Get started as a Vendor</button>
-      </div>
+      </div> */}
     </div>
   );
 };
