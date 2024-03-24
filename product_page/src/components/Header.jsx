@@ -29,7 +29,7 @@ const Header = () => {
         <div className={styles.headerTextWrapper}>
             <h2 className={styles.headerText}>GET YOUR PRODUCTS ON UNICLIQUE</h2>
         </div>
-        <img src={headerimg} alt="Header" />
+        <img src={headerimg} alt="Header" className={styles.headerImage} />
       </div>
     </header>
   )
