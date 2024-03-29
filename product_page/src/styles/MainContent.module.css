@@ -135,6 +135,7 @@
       gap: 0;
       overflow-y: scroll;
       margin: 2rem 0 2rem 1rem;
+      padding: 8px;
     }
     .categoryIcon {
       justify-items: center;
@@ -189,8 +190,8 @@
   
   @media (max-width: 767px) and (min-width: 360px) {
     .categoryIcons {
-      grid-template-columns: repeat(2, 0.5fr);
       gap: 0;
+      padding: 7px;
     }
     .categoryIcon {
       justify-items: center;
