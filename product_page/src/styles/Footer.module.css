@@ -18,7 +18,7 @@
   
   .column {
     flex: 1;
-    min-width: 150px;
+    max-width: 150px;
   }
   
   .column h4 {
@@ -44,7 +44,7 @@
   @media (max-width: 768px) and (min-width: 325px) {
     .column {
       flex: 1;
-      min-width: 120px;
+      min-width: 90px;
       font-size: 0.8rem;
     }
   }
@@ -52,7 +52,7 @@
   @media (max-width: 767px) and (min-width: 360px) {
     .column {
       flex: 1;
-      min-width: 100px;
+      min-width: 70px;
       font-size: 0.8rem;
     }
   }
@@ -60,7 +60,7 @@
   @media (max-width: 920px) and (min-width: 360px) {
     .column {
       font-size: 0.8rem;
-      min-width: 70px;
+      min-width: 50px;
     }
     .footer {
       padding: 1.2rem;
