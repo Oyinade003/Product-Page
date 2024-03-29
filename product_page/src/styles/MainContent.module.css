@@ -132,16 +132,15 @@
   
   @media (max-width: 768px) and (min-width: 325px) {
     .categoryIcons {
-      gap: 0;
       overflow-y: scroll;
       margin: 2rem 0 2rem 1rem;
       padding: 8px;
     }
     .categoryIcon {
       justify-items: center;
-      width: 5em;
+      width: 6em;
       height: 4em;
-      padding-left: 20px;
+      /* padding-left: 20px; */
     }
     .categoryIcon img{
       width: 75%;
@@ -155,7 +154,7 @@
     }
     .vendor{
       font-size: 1rem;
-      width: 95%;
+      width: 85%;
     }
     .vendorSignUp {
       min-width: 100px;
@@ -192,12 +191,14 @@
     .categoryIcons {
       gap: 0;
       padding: 7px;
+      width: 90%;
+      overflow-y: scroll;
     }
     .categoryIcon {
       justify-items: center;
-      width: 6em;
+      width: 7em;
       height: 5em;
-      padding-left: 10px;
+      /* padding-left: 10px; */
       padding-bottom: 5px;
       margin: 0px 10px 0 10px;
     }
@@ -214,7 +215,7 @@
     }
     .vendor{
       font-size: 1rem;
-      width: 95%;
+      width: 85%;
     }
     .vendorSignUp {
       min-width: 100px;
