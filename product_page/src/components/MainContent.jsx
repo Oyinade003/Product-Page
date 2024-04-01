@@ -52,28 +52,9 @@ const MainContent = () => {
       </div>
 
       {/* VENDORS */}
-      <div className={styles.vendors}>
-        <h2> Shop from a Vendor near you 🛒 </h2>
-        <div className={styles.vendor}>
-          <div className={styles.vendorheader}>
-            <p><b> Dummy Foods </b> </p>
-            <p> Food For All </p>
-            <img src={dflogo} alt="dflogo" className={styles.dflogo} />
-          </div>
-          <h4 className={styles.contenthead}> Dummy Foods</h4>
-          <ul className={styles.product}>
-            <li>&#x1F375; Rice </li>
-            <li>&#x1F375;  Stirfry </li>
-            <li>&#x1F375; Pizza Slice </li>
-          </ul>
-          <p> <b> Price Range:</b> &#8358;500 - &#8358;6,000 </p>
-          <div className={styles.rating}>
-            <img src={star} alt='star' className={styles.star}/> <p><b>5.0</b>(20)</p>
-          </div>
-          <p>🗺️ UI, Awo Hall </p>
-          <p><small> Delivery Charges Apply </small></p>
-        </div>
-      </div>
+        <h2 className={styles.vendors}> Shop from a Vendor near you 🛒 </h2>
+        
+        
     
       {/* <div className={styles.vendorSignUp}>
         <button className={styles.vendorButton}>Get started as a Vendor</button>
