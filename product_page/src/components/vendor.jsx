@@ -78,6 +78,7 @@ const VendorCard = ({
   };
 
   return (
+    <div>
       <div className={styles.vendor}>
         <div className={styles.vendorheader}>
           <p className={styles.vendorName}><b>{vendorName}</b></p>
@@ -99,6 +100,7 @@ const VendorCard = ({
         </div>
         </div>
       </div>
+      </div>
   );
 };
 
@@ -113,6 +115,7 @@ const VendorList = () => {
   
     return (
       <div className={styles.vendorListContainer}>
+        <h2 className={styles.vendors}> Shop from a Vendor near you 🛒 </h2>
         <div className={styles.scrollContainer}>
         <button
           className={`${styles.scrollButton} ${styles.leftButton}`}

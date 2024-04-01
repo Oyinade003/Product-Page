@@ -15,7 +15,6 @@ const Layout = ({ children }) => {
     <div>
       <Header />
       <main>{children}</main>
-      <VendorList />
       <FoodList />
       <ClothList />
       <FootwearList />
@@ -24,6 +23,7 @@ const Layout = ({ children }) => {
       <BookList />
       <BagList />
       <HairList />
+      <VendorList />
       <Footer />
     </div>
   )

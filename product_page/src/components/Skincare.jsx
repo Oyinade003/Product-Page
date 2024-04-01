@@ -26,8 +26,8 @@ const skincareData = [
     deliveryNote: 'Delivery Charges Apply',
   },
   {
-    skincareImage: moisturizer,
-    skincareName: "Moisturizer",
+    skincareImage: vitcserum,
+    skincareName: "Vitamin C Serum",
     price: "₦3,200",
     rating: 4.00,
     deliveryTime: "5-15 minutes",

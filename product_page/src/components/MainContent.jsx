@@ -50,8 +50,6 @@ const MainContent = () => {
         </div>
       </div>
 
-      {/* VENDORS */}
-        <h2 className={styles.vendors}> Shop from a Vendor near you 🛒 </h2>
         
         
     
