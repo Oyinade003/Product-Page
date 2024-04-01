@@ -107,6 +107,9 @@
       padding-bottom: 5px;
       margin: 0;
     }
+    h2{
+      font-size: 1.3rem;
+    }
   }
   
   @media (max-width: 480px) {
@@ -123,5 +126,8 @@
       height: 5em;
       padding-bottom: 5px;
       margin: 0;
+    }
+    h2{
+      font-size: 1.3rem;
     }
   }
