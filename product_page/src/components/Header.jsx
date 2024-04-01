@@ -5,6 +5,7 @@ import logo from '../assets/logo1.png';
 import cart from '../assets/Vector.png';
 import user from '../assets/Group.png';
 import headerimg from '../assets/header.png';
+import searchIcon from '../assets/searchicon.png';
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
       </div>
       <div className={styles.search}>
         <input type="text" placeholder="Search" />
+        <img src={searchIcon} className={styles.searchIcon} />
       </div>
       <div className={styles.icons}>
         <button className={styles.cartIcon}>

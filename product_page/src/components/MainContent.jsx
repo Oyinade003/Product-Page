@@ -10,18 +10,17 @@ import skincareIcon from '../assets/skincare.jpg';
 import haircareIcon from '../assets/haircare.png';
 import gadgetsIcon from '../assets/gadgets.png';
 import stationeriesIcon from '../assets/stationeries.png';
-import dflogo from '../assets/dflogo.png';
-import star from '../assets/Star 1.png';
+
 
 const MainContent = () => {
   return (
     <div className={styles.mainContent}>
       <div className={styles.categoryIcons}>
-      <div className={`${styles.categoryIcon1} ${styles.categoryIcon}`}>
+      <div className={`${styles.categoryIcon} ${styles.categoryIcon1}`}>
           <img src={foodIcon} alt="Food" />
           <h3>Food</h3>
         </div>
-        <div className={`${styles.categoryIcon3} ${styles.categoryIcon}`}>
+        <div className={`${styles.categoryIcon} ${styles.categoryIcon3}`}>
           <img src={clothesIcon} alt="Clothes" />
           <h3>Clothes</h3>
         </div>
