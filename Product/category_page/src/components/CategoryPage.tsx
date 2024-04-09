@@ -1,20 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Category.module.css';
 import ProductCard from './ProductCard';
-// import SimilarProducts from './SimilarProducts';
 import productData from './data';
 
-interface Product {
-    id: string;
-    name: string;
-    price: number;
-    deliveryTime: number;
-    deliveryCharges: boolean;
-    rating: number;
-    location: string;
-    imageUrl: string;
-    subcategory: string;
-}
+
 
 const CategoryPage: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>('');
@@ -24,34 +13,6 @@ const CategoryPage: React.FC = () => {
     const [deliveryTimeRange, setDeliveryTimeRange] = useState<[number, number]>([0, Infinity]);
     const [minRating, setMinRating] = useState<number>(0);
 
-    useEffect(() => {
-        // Filter products based on the current state
-        const filteredProducts = Object.values(productData).flatMap((subcategoryProducts) =>
-            subcategoryProducts.filter((product) =>
-                product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-                product.price >= priceRange[0] &&
-                product.price <= priceRange[1] &&
-                product.deliveryTime >= deliveryTimeRange[0] &&
-                product.deliveryTime <= deliveryTimeRange[1] &&
-                product.rating >= minRating &&
-                (selectedLocation === 'All' || product.location === selectedLocation) &&
-                (selectedSubcategory === 'All' || product.subcategory === selectedSubcategory)
-            )
-        );
-
-        // Update the state with the filtered products
-        setFilteredProducts(filteredProducts);
-    }, [
-        searchTerm,
-        selectedSubcategory,
-        selectedLocation,
-        priceRange,
-        deliveryTimeRange,
-        minRating,
-        productData,
-    ]);
-
-    const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
     const [showFilters, setShowFilters] = useState(false);
     const toggleFilters = () => {
