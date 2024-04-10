@@ -15,7 +15,7 @@ export const productData: ProductsData = {
       rating: 4.2,
       location: 'Awo Hall, UI',
       imageUrl: '/assets/jollof rice.png',
-      subcategory: 'nigerian dish'
+      subcategory: 'Nigerian dishes'
     },
     {
       id: '2',
@@ -24,9 +24,9 @@ export const productData: ProductsData = {
       deliveryTime: 15,
       deliveryCharges: true,
       rating: 4.3,
-      location: 'Awo Hall, UI',
+      location: 'Bello Hall, UI',
       imageUrl: '/assets/fried rice.png',
-      subcategory: 'nigerian dish'
+      subcategory: 'Nigerian dishes'
     },
     {
       id: '3',
@@ -35,9 +35,9 @@ export const productData: ProductsData = {
       deliveryTime: 8,
       deliveryCharges: true,
       rating: 4.5,
-      location: 'Awo Hall, UI',
+      location: 'Queens Hall, UI',
       imageUrl: '/assets/amala & ewedu.png',
-      subcategory: 'nigerian dish'
+      subcategory: 'Nigerian dishes'
     },
     {
       id: '4',
@@ -48,7 +48,7 @@ export const productData: ProductsData = {
       rating: 4.8,
       location: 'Awo Hall, UI',
       imageUrl: '/assets/akara.png',
-      subcategory: 'nigerian dish'
+      subcategory: 'Nigerian dishes'
     },
     {
       id: '5',
@@ -57,9 +57,9 @@ export const productData: ProductsData = {
       deliveryTime: 2,
       deliveryCharges: false,
       rating: 4.1,
-      location: 'Awo Hall, UI',
+      location: 'Tedder Hall, UI',
       imageUrl: '/assets/beef.png',
-      subcategory: 'nigerian dish'
+      subcategory: 'Nigerian dishes'
     },
     {
       id: '6',
@@ -70,7 +70,7 @@ export const productData: ProductsData = {
       rating: 4.0,
       location: 'Awo Hall, UI',
       imageUrl: '/assets/pepper soup.png',
-      subcategory: 'nigerian dish'
+      subcategory: 'Nigerian dishes'
     }
   ],
   SNACKS: [
@@ -81,7 +81,7 @@ export const productData: ProductsData = {
       deliveryTime: 3,
       deliveryCharges: true,
       rating: 4.2,
-      location: 'Awo Hall, UI',
+      location: 'Bello Hall, UI',
       imageUrl: '/assets/suya.png',
       subcategory: 'snack'
     },
@@ -92,7 +92,7 @@ export const productData: ProductsData = {
       deliveryTime: 4,
       deliveryCharges: true,
       rating: 4.3,
-      location: 'Awo Hall, UI',
+      location: 'AOO Hall, UI',
       imageUrl: '/assets/cookies.png',
       subcategory: 'snack'
     },
@@ -103,7 +103,7 @@ export const productData: ProductsData = {
       deliveryTime: 4,
       deliveryCharges: true,
       rating: 4.5,
-      location: 'Awo Hall, UI',
+      location: 'Zik Hall, UI',
       imageUrl: '/assets/donuts.png',
       subcategory: 'snack'
     },
@@ -125,7 +125,7 @@ export const productData: ProductsData = {
       deliveryTime: 2,
       deliveryCharges: false,
       rating: 4.1,
-      location: 'Awo Hall, UI',
+      location: 'Indy Hall, UI',
       imageUrl: '/assets/popcorn.png',
       subcategory: 'snack'
     },
@@ -149,7 +149,7 @@ export const productData: ProductsData = {
       deliveryTime: 5,
       deliveryCharges: false,
       rating: 4.5,
-      location: 'Awo Hall, UI',
+      location: 'Cmf Hostel, UI',
       imageUrl: '/assets/chocolatecake.png',
       subcategory: 'cake'
     },
@@ -160,7 +160,7 @@ export const productData: ProductsData = {
       deliveryTime: 4,
       deliveryCharges: true,
       rating: 4.6,
-      location: 'Awo Hall, UI',
+      location: 'Idia Hall, UI',
       imageUrl: '/assets/cupcake.png',
       subcategory: 'cake'
     },
@@ -182,7 +182,7 @@ export const productData: ProductsData = {
       deliveryTime: 4,
       deliveryCharges: true,
       rating: 4.9,
-      location: 'Awo Hall, UI',
+      location: 'Talent Hostel, UI',
       imageUrl: '/assets/birthday-cake.png',
       subcategory: 'cake'
     }
@@ -206,7 +206,7 @@ export const productData: ProductsData = {
       deliveryTime: 3,
       deliveryCharges: true,
       rating: 4.7,
-      location: 'Awo Hall, UI',
+      location: 'Cmf Hostel, UI',
       imageUrl: '/assets/pizza.png',
       subcategory: 'fast food'
     },
@@ -217,7 +217,7 @@ export const productData: ProductsData = {
       deliveryTime: 2,
       deliveryCharges: false,
       rating: 4.2,
-      location: 'Awo Hall, UI',
+      location: 'Idia Hall, UI',
       imageUrl: '/assets/puff-puff.png',
       subcategory: 'fast food'
     },

@@ -41,7 +41,6 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 1rem;
-    /* background-color: #590209; */
     overflow-y: none;
   } 
   
@@ -49,13 +48,14 @@
   
   .productRow {
 
-    gap: 1.5rem;
-    justify-content: space-between;
+    /* gap: 1.5rem;
+    justify-content: space-between; */
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 30%; 
     -ms-overflow-style: none; 
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scroll-snap-align: start;
@@ -63,7 +63,8 @@
     max-width: 100%;
     scrollbar-width: thin;
     scrollbar-color: #c0392b #f1f1f1; 
-    /* background-color: #590209; */
+    justify-content: flex-start;
+    gap: 40px;
   }
   
   .subcategoryName {
@@ -150,19 +151,61 @@
 .filtersBody .searchfield > div > input,
 .filtersBody .searchfield > div > select {
   margin-right: 8px;
+  width: "200px";
+  height: "25px";
+}
+
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Other browsers */
+}
+
+/* Target the up and down arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 20px; 
+  height: 50%; 
+  background: transparent;
 }
 
 @media (max-width: 768px) {
   .productRow {
     grid-auto-columns: calc(60% - 10px); 
-    height: 24rem;
   }
+  .subcategoryName{
+    font-size: 1rem;
+  }
+  .filtersContainer {
+    width: calc(80% - 10px);
+  }
+  .filtersBody .searchfield > div > span {
+    font-size: 0.5rem;
+  }
+  .filtersBody .searchfield > div > input,
+.filtersBody .searchfield > div > select {
+  font-size: 0.5rem;
+  height: 16px;
+  width: 80px;
+}
+.filtersBody .searchfield > div > input[type="number"]{
+  width: 45px;
+  height: 12px;
+}
 }
 
 @media (max-width: 480px) {
   .productRow {
     grid-auto-columns: calc(80% - 10px); 
-    height: 24rem;
+  }
+  .filtersContainer {
+    width: calc(100% - 2px);
+  }
+  .filtersBody {
+    width: calc(60% - 10px);
   }
 }
    

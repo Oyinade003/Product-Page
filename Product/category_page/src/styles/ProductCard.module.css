@@ -7,6 +7,7 @@
     height: 25em;
     text-align: start;
     margin: 1em 1em;
+    flex: 0 0 auto; 
   }
   
   .productImage {
@@ -26,6 +27,22 @@
     height: 1em;
     color: #fff;
     margin-right: 8px;
+  }
+
+
+  @media (max-width: 768px) and (min-width: 325px) {
+    .productCard{
+      margin: 0.2em 0.5em;
+      max-height: inherit;
+    }
+  }
+  
+  @media (min-width: 375px) {
+    .productCard{
+      margin: 0.2em 0.5em;
+      max-height: inherit;
+    }
+  
   }
 
   
