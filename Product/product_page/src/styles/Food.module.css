@@ -102,11 +102,13 @@
   .viewMoreButton {
     background-color: #590209;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-left: 16px; 
+    margin-left: 72%; 
+    align-self: flex-end;
+    right: 0;
   }
   
   .viewMoreButton:hover {
