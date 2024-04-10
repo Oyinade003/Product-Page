@@ -1,5 +1,5 @@
 .category-page{
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
   background-color: #590209;
   width: 100vw;
 }
@@ -41,6 +41,8 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 1rem;
+    /* background-color: #590209; */
+    overflow-y: none;
   } 
   
 
@@ -61,6 +63,7 @@
     max-width: 100%;
     scrollbar-width: thin;
     scrollbar-color: #c0392b #f1f1f1; 
+    /* background-color: #590209; */
   }
   
   .subcategoryName {
