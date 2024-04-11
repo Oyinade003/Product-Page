@@ -5,7 +5,7 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    max-width: 100%
   }
 
   .headerbar{
@@ -80,8 +80,8 @@
 
 
   @media (max-width: 768px) and (min-width: 325px) {
-    .logo img {
-      height: 18px;
+    .logo {
+      height: 14px;
       margin: 0;
     }
   
@@ -114,6 +114,19 @@
     .headerText{
       font-size: 1.2rem;
     }
+    .searchContainer {
+      width: 300px;
+      margin-left: 20px;
+      margin-right: 50px;
+      padding: 0;
+    }
+    .searchInput {
+      width: 100px;
+      padding: 0;
+      margin-left: -35px;
+      margin-right: 20px;
+      background: transparent;
+    }
   }
   
   @media (min-width: 375px) {
@@ -122,8 +135,8 @@
       /* padding: 0.5rem; */
     }
   
-    .logo img {
-      height: 20px;
+    .logo {
+      height: 34px;
     }
   
     .search {
@@ -133,5 +146,10 @@
     }
     .headerText{
       font-size: 1.2rem;
+    }
+    .searchContainer{
+      width: 45%;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }

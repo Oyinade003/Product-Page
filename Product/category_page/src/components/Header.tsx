@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, setSearchTerm }) => {
       </div>
       <div className={styles.headericon}>
         <div className={styles.headerTextWrapper}>
-          <h2 className={styles.headerText}>GET YOUR FOOD PRODUCTS ON UNICLIQUE</h2>
+          <h2 className={styles.headerText}> FOOD PRODUCTS ON UNICLIQUE</h2>
         </div>
       </div>
     </header>
