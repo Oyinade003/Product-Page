@@ -79,8 +79,15 @@ const FoodList = () => {
   };
 
   return (
+    <div>
     <div className={styles.foodListContainer}>
+      <div className={styles.foodHeaderContainer}>
       <h2> Foods and Snacks </h2>
+      <a href="https://product-page-u6mz.vercel.app/" className={styles.viewMoreButton}>
+          View More
+        </a>
+        </div>
+
       <div className={styles.scrollContainer}>
         <button
           className={`${styles.scrollButton} ${styles.leftButton}`}
@@ -96,9 +103,6 @@ const FoodList = () => {
         >
           &gt;
         </button>
-        <a href="https://product-page-u6mz.vercel.app/" className={styles.viewMoreButton}>
-          View More
-        </a>
       </div>
       <div className={styles.foodList} ref={foodListRef}>
         {foodData.map((food, index) => (
@@ -113,6 +117,7 @@ const FoodList = () => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };

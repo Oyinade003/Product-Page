@@ -4,9 +4,12 @@ import ProductCard from './ProductCard';
 import productData from './data';
 
 
+interface CategoryPageProps {
+  searchTerm: string;
+  setSearchTerm: (searchTerm: string) => void;
+}
 
-const CategoryPage: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState<string>('');
+const CategoryPage: React.FC<CategoryPageProps> = ({ searchTerm, setSearchTerm }) => {
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>('All');
   const [selectedLocation, setSelectedLocation] = useState<string>('All');
   const [priceRange, setPriceRange] = useState<[number, number]>([0, Infinity]);
@@ -29,14 +32,6 @@ const CategoryPage: React.FC = () => {
     setIsFiltersReset((prevState) => !prevState);
   };
 
-  // const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, subcategory: string) => {
-  //   e.preventDefault();
-  //   const sectionId = subcategory.replace(/\s+/g, '-').toLowerCase();
-  //   const element = document.getElementById(sectionId) as HTMLElement | null;
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
 
   if (!productData || typeof productData !== 'object') {
     return <div>Loading...</div>;
@@ -53,16 +48,6 @@ const CategoryPage: React.FC = () => {
         {showFilters && (
           <div className={styles.filtersBody}>
             <div className={styles.searchfield}>
-              <div>
-                <span>Search:</span>
-                <input
-                  type="text"
-                  placeholder="Search products..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  style={{ backgroundColor: "#f0f0f0", color: "#590209" }}
-                />
-              </div>
               <div>
             <span>Subcategory:</span>
             <select

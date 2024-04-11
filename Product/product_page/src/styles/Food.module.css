@@ -25,6 +25,9 @@
     display: none; 
   }
 
+  .foodHeaderContainer {
+    display: flex;
+  }
   h2 {
     margin-left: 16px;
     font-size: 1.8rem;
@@ -106,7 +109,7 @@
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-left: 72%; 
+    margin-left: 70%; 
     align-self: flex-end;
     right: 0;
   }

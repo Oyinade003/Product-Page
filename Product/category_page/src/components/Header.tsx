@@ -1,39 +1,51 @@
-import styles from '../styles/Header.module.css'
-
-import logo from '/assets/logo1.png';
-import cart from '/assets/Vector.png';
-import user from '/assets/Group.png';
-// import headerimg from '../assets/header.png';
+import React from 'react';
+import styles from '../styles/Header.module.css';
+import logo from '/logo1.png';
+import cart from '/assets/cart.png';
+import user from '/assets/user.png';
 import searchIcon from '/assets/searchicon.png';
 
-const Header = () => {
+interface HeaderProps {
+  searchTerm: string;
+  setSearchTerm: (searchTerm: string) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ searchTerm, setSearchTerm }) => {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
     <header className={styles.header}>
-    <div className={styles.headerbar}>
-      <div className={styles.logo}>
-        <img src={logo} alt="Uniclique" />
-      </div>
-      <div className={styles.search}>
-        <input type="text" placeholder="Search" className={styles.searchInput} />
-        <img src={searchIcon} className={styles.searchIcon} />
-      </div>
-      <div className={styles.icons}>
-        <button className={styles.cartIcon}>
-          <img src={cart} alt="Cart" />
-        </button>
-        <button className={styles.userIcon}>
-          <img src={user} alt="User" />
-        </button>
-      </div>
+      <div className={styles.headerbar}>
+          <img className={styles.logo} src={logo} alt="Uniclique" />
+        <div className={styles.searchContainer}>
+          <span>Search:</span>
+          <input
+            type="text"
+            placeholder="Search products..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+            className={styles.searchInput}
+          />
+          <img className={styles.searchIcon}  src={searchIcon} alt="searchIcon" />
+        </div>
+        <div className={styles.icons}>
+          <button className={styles.cartIcon}>
+            <img src={cart} alt="Cart" />
+          </button>
+          <button className={styles.userIcon}>
+            <img src={user} alt="User" />
+          </button>
+        </div>
       </div>
       <div className={styles.headericon}>
         <div className={styles.headerTextWrapper}>
-            <h2 className={styles.headerText}>GET YOUR FOOD PRODUCTS ON UNICLIQUE</h2>
+          <h2 className={styles.headerText}>GET YOUR FOOD PRODUCTS ON UNICLIQUE</h2>
         </div>
-        {/* <img src={headerimg} alt="Header" className={styles.headerImage} /> */}
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

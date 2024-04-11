@@ -1,15 +1,15 @@
-// import React from 'react';
-import './App.css';
-import CategoryPage from './components/CategoryPage.tsx'
-import Header from './components/Header.tsx';
-
+import { useState } from 'react';
+import Header from './components/Header';
+import CategoryPage from './components/CategoryPage';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState<string>('');
+
   return (
     <>
       <div className="app">
-        <Header />
-        <CategoryPage />
+        <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <CategoryPage searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
     </>
   );
