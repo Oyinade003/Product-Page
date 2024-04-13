@@ -148,8 +148,17 @@
       font-size: 1.2rem;
     }
     .searchContainer{
-      width: 45%;
+      width: 85%;
       margin-left: 20px;
-      margin-right: 20px;
+      margin-right: 10px;
+      justify-content: space-between;
+      padding: 0;
+    }
+    /* .searchInput{
+      margin-left: 10px;
+    } */
+    .icons {
+      gap: 0.001rem;
+      margin-right: -10px;
     }
   }
