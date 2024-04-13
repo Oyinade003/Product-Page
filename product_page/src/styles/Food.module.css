@@ -54,6 +54,7 @@
     margin-bottom: 20px;
     align-items: flex-start;
     justify-content: space-between;
+    text-decoration: none;
   }
   .foodName {
     font-size: 1.3rem;
