@@ -81,8 +81,9 @@
 
   @media (max-width: 768px) and (min-width: 325px) {
     .logo {
-      height: 14px;
-      margin: 0;
+      /* height: 14px; */
+      margin: 6px 0 0 0;
+      height: 1.7em;
     }
   
     .search {
@@ -136,7 +137,7 @@
     }
   
     .logo {
-      height: 34px;
+      height: 1.5em;
     }
   
     .search {
