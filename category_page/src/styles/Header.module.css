@@ -1,11 +1,12 @@
 .header {
     align-items: center;
     background-color: #fff; 
-    color: #fff;
+    color: #590209;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
-    max-width: 100%
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .headerbar{
@@ -14,26 +15,38 @@
     margin: 0;
     padding: 0;
     width: 98%;
+    min-width: 100%;
+  }
+
+  .headerTextWrapper {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
   }
   
   .headerText {
-    color: #590209;
-    font-size: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .headerText span {
-    color: #590209;
-    font-size: 2.4rem;
   }
 
   .headericon img{
     height: 25rem;
     width: 100%;
   }
+
+  .logodiv{
+    display: flex;
+  }
   
   .logo {
     height: 40px;
+  }
+  .headerLogoText {
+    font-size: 1.5rem;
+    margin: 4px 0 0 15px;
   }
   
   .searchContainer {
@@ -42,6 +55,8 @@
     border-radius: 4px;
     font-size: 1rem;
     padding: 0;
+    height: 35px;
+    margin-top: 3px;
   }
   
   .searchInput {
@@ -51,7 +66,7 @@
     background-color: #fff;
     color: #590209;
     width: 400px;
-    margin: 0;
+    padding: 1em;
   }
   
   .searchIcon {
@@ -78,88 +93,187 @@
     height: 24px;
   }
 
+  .headerimages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: solid 1.4px #590209;
+    width: 105%;
+    margin-left: -9px;
+  }
 
-  @media (max-width: 768px) and (min-width: 325px) {
-    .logo {
-      /* height: 14px; */
-      margin: 6px 0 0 0;
-      height: 1.7em;
-    }
-  
-    .search {
-      width: 30%;
-      padding: 0.01rem 0.05rem;
-      font-size: 0.5rem;
-      background-color: #fff;
-      margin-left: 0.4em;    
-      margin-right: 4.2em;
-    }
-  
-    .headerbar {
-      display: flex;
-      justify-content: flex-start;
-      align-items: left;
-      padding: 0.5rem 0.2rem 0 0.5rem;
-      max-width: 95%;
-      width: 100%;
-    }
-  
-    .icons img {
-      height: 18px;
-    }
-  
-    .icons {
-      display: flex;
-      gap: 0.8rem;
-    }
-    .headerText{
-      font-size: 1.2rem;
-    }
-    .searchContainer {
-      width: 300px;
-      margin-left: 20px;
-      margin-right: 50px;
-      padding: 0;
-    }
-    .searchInput {
-      width: 100px;
-      padding: 0;
-      margin-left: -35px;
-      margin-right: 20px;
-      background: transparent;
-    }
+  .headerimg {
+    margin-right: -15px;
+  }
+
+
+@media (max-width: 425px) and (min-width: 320px) {
+  .logodiv{
+    flex-direction: column;
+    margin-right: 2%;
+    margin-top: 0;
+  }
+  .logo {
+    height: 1em;
+    margin-right: 35px;
+    margin-top: 10px;
+  }
+  .headerLogoText{
+    font-size: 0.45rem;
+    margin-left: 2px;
+  }
+
+  .searchContainer {
+    font-size: 0.8rem;
+    margin-right: 10%;
   }
   
-  @media (min-width: 375px) {
-    .headerbar {
-      align-items: center;
-      /* padding: 0.5rem; */
-    }
-  
-    .logo {
-      height: 1.5em;
-    }
-  
-    .search {
-      width: 55%;
-      margin: 0.03rem 4rem 0.4rem 2rem;
-      padding: 0.08rem 0.6rem;
-    }
-    .headerText{
-      font-size: 1.2rem;
-    }
-    .searchContainer{
-      width: 85%;
-      margin-left: 20px;
-      margin-right: 10px;
-      justify-content: space-between;
-      padding: 0;
-    }
-    /* .searchInput{
-      margin-left: 10px;
-    } */
-    .icons {
-      gap: 0.001rem;
-      margin-right: -10px;
-    }
+  .searchInput {
+    width: 200px;
+    margin: 0.02em 0.02em;
   }
+
+  .headerbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 0.5rem 0.2rem 0 0.5rem;
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .icons img {
+    height: 18px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.1rem;
+  }
+  .headerText{
+    font-size: 1.2rem;
+  }
+  .headerimg2{
+    visibility: hidden;
+  }
+  .headerimg{
+    margin-right: -1px;
+  }
+  .headerimages {
+    width: 180%;
+    margin-left: -10px;
+  }
+  .headerTextWrapper {
+    top: 30%;
+    left: 40%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .logodiv{
+    flex-direction: column;
+    margin-right: 2%;
+    margin-top: 0;
+  }
+  .logo {
+    height: 1em;
+    margin-right: 35px;
+    margin-top: 10px;
+  }
+  .headerLogoText{
+    font-size: 0.45rem;
+    margin-left: 2px;
+  }
+
+  .searchContainer {
+    font-size: 0.8rem;
+    margin-right: 10%;
+  }
+  
+  .searchInput {
+    width: 160px;
+    padding: 0.02em 0.8em;
+  }
+  .headerText{
+    font-size: 1.2rem;
+  }
+  .icons {
+    gap: 0.001rem;
+    margin-right: -10px;
+  }
+  .headerimg2{
+    visibility: hidden;
+  }
+  .headerimg{
+    margin-right: 0px;
+  }
+  .headerimages {
+    width: 110%;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 972px) and (min-width: 430px) {
+  .logodiv{
+    flex-direction: column;
+    margin-right: 2%;
+    margin-top: 0;
+  }
+  .logo {
+    height: 1em;
+    margin-right: 35px;
+    margin-top: 10px;
+  }
+  .headerLogoText{
+    font-size: 0.45rem;
+    margin-left: 2px;
+  }
+
+  .searchContainer {
+    font-size: 0.8rem;
+  }
+  
+  .searchInput {
+    width: 60px;
+    margin: 0.02em 0.02em;
+  }
+
+  .headerbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 0.5rem 0.2rem 0 0.5rem;
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .icons img {
+    height: 18px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .headerText{
+    font-size: 1.2rem;
+  }
+  .headerimg2{
+    visibility: hidden;
+  }
+  .headerimg{
+    margin-right: 0px;
+  }
+  .headerimages {
+    width: 110%;
+    margin-left: -10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px){
+  .headerimg3{
+    visibility: hidden;
+  }
+}
