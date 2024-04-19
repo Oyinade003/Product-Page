@@ -1,0 +1,205 @@
+:root{
+  --primary-colour: #6f2466;
+  --secondary-colour: #721574;
+  --tertiary-colour: #ce5dc1;
+  --font-colour: #d481d4;
+  --pop-colour: #84286b;
+}
+
+.container{
+  width: 1440px;
+  max-width: 100%;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-colour);
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+header h4{
+  margin: 0;
+}
+.unilogo{
+  width: 2em;
+  border-radius: 50%;
+  margin: 0;
+}
+.bgimage{
+  width: 100%;
+  height: 20em;
+  background-image: url(./assets/vendorcart.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.maincontent{
+  display: flex;
+}
+
+.vendor{
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.2), 0px 2px 4px -1px rgba(0, 0, 0, 0.1);
+  /* border: var(--secondary-colour) solid 2px; */
+  width: 40%;
+  padding: 0 10px;
+  margin-top: 5%;
+  height: 20em;
+  margin-left: 5%;
+  max-width: 100%;
+}
+.vendor-header{
+  background-color: var(--pop-colour);
+  color: #fff;
+  height: 15%;
+  width: 95%;
+  /* margin-top: -16px; */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 100%;
+  text-align: center;
+  margin-left: -10px;
+}
+.vendor-header p{
+  margin: 0;
+  padding: 0;
+}
+.dflogo{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  margin-right: 70%;
+  margin-top: -15px;
+}
+.content-head{
+  text-align: center;
+  margin: 0;
+}
+.product{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.product li{
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.pricerating{
+  display: flex;
+  justify-content: space-between;
+  background-color: #590209;
+}
+.star{
+  width: 1em;
+  height: 1em;
+  color: #fff;
+  margin-top: 12px;
+  margin-right: 8px;
+}
+.rating{
+  display: flex;
+  margin-top: -20px;
+}
+.locationRating{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.signup-div{
+  padding: 2em 6em;
+  background-color: var(--pop-colour);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: calc(10% + 10vw);
+  color: #fff;
+}
+.signup-div a{
+  text-decoration: none;
+}
+
+footer{
+  background-color: var(--pop-colour);
+  color: #fff;
+  padding: 20px 30px 20px 20px;
+  max-width: 100%;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-div-content{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.copyright{
+  text-align: center;
+}
+
+
+@media(max-width: 540px){
+  .vendor{
+    margin-left: 2%;
+    margin-right: 5%;
+    line-height: 1.3;
+    font-size: 15px;
+  }
+  .sub-vendor{
+    margin-right: 2%;
+  }
+  .vendor-header{
+    width: 88%;
+    height: 10%;
+    align-items: flex-end;
+  }
+  .dflogo{
+    width: 2em;
+    height: 2em;
+    margin-right: 85%;
+  }
+  .content-head{
+    margin-top: 7px;
+  }
+  .signup-div{
+    padding: 1em 2em;
+}
+}
+
+@media(max-width: 280px){
+  .dflogo{
+    margin-top: -10px;
+    margin-right: 75%;
+  }
+  .vendor-header{
+    font-size: 12px;
+  }
+  .signup-div{
+    padding: 1em 1em;
+}
+}
